@@ -1,0 +1,8 @@
+{
+    "host": "localhost",
+    "database": {
+        "name": "sace",
+        "user": "root",
+        "password": "password"
+    }
+}
