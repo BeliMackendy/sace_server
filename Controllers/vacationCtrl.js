@@ -19,7 +19,7 @@ exports.selectvacationbylibelle_vacation = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };
 
@@ -33,6 +33,6 @@ exports.selectvacationbyId_vacation = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };

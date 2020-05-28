@@ -32,7 +32,7 @@ exports.selectsouscategoriebyId_souscategorie = async(souscategorie, result) => 
 };
 
 exports.selectsouscategoriebyId_categorie = async(souscategorie, result) => {
-    // console.log(souscategorie);
+    console.log(souscategorie);
     await connect.query(
         "Select * From sous_categorie where Id_categorie = ?",
         souscategorie.Id_categorie,

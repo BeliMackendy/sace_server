@@ -19,7 +19,7 @@ exports.selectniveaubylibelle_niveau = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };
 
@@ -33,6 +33,6 @@ exports.selectniveaubyId_niveau = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };

@@ -19,7 +19,7 @@ exports.selectcategoriebyLibelle = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };
 
@@ -33,6 +33,6 @@ exports.selectcategoriebyIdCategorie = async(req, res) => {
         if (err) {
             console.log(`Error: ${err}`);
         }
-        res.json(result[0]);
+        res.json(result);
     });
 };

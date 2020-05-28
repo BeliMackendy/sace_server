@@ -21,7 +21,7 @@ exports.selectsouscategoriebyLibelle = async(req, res) => {
             if (err) {
                 console.log(`Error: ${err}`);
             }
-            res.json(result[0]);
+            res.json(result);
         }
     );
 };
@@ -32,13 +32,13 @@ exports.selectsouscategoriebyId_souscategorie = async(req, res) => {
     const souscategorie = {
         Id_souscategorie: Id_souscategorie,
     };
-    await souscategorieDb.selectsouscategoriebyLibelle(
+    await souscategorieDb.selectsouscategoriebyId_souscategorie(
         souscategorie,
         (err, result) => {
             if (err) {
                 console.log(`Error: ${err}`);
             }
-            res.json(result[0]);
+            res.json(result);
         }
     );
 };
@@ -49,13 +49,13 @@ exports.selectsouscategoriebyId_categorie = async(req, res) => {
     const souscategorie = {
         Id_categorie: Id_categorie,
     };
-    await souscategorieDb.selectsouscategoriebyLibelle(
+    await souscategorieDb.selectsouscategoriebyId_categorie(
         souscategorie,
         (err, result) => {
             if (err) {
                 console.log(`Error: ${err}`);
             }
-            res.json(result[0]);
+            res.json(result);
         }
     );
 };
