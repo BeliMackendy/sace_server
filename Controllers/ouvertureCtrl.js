@@ -30,7 +30,7 @@ exports.Insert = async (req, res) => {
     section_communale: section_communale,
     bds: bds,
     biz: biz,
-    id_souscategorie: "6",
+    id_souscategorie: categorie,
     type_categorie: typecategorie,
     id_niveau: niveau,
     id_vacation: vacation,
