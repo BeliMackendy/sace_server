@@ -1,4 +1,6 @@
 const express = require("express");
+const fileUpload = require("express-fileupload");
+
 const app = express();
 const cors = require("cors");
 const ouverture = require("./Routes/ouvertureRoutes");
@@ -12,9 +14,11 @@ const entreprise_individuelle = require("./Routes/entreprise_individuelleRoutes"
 const entreprise_nomscollectifs = require("./Routes/entreprise_nomscollectifsRoutes");
 const personne_moraleRoutes = require("./Routes/personne_moraleRoutes");
 
+app.use(fileUpload());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+
 app.use("/app/sace", ouverture);
 app.use("/app/sace", categorie);
 app.use("/app/sace", souscategorie);

@@ -1,0 +1,32 @@
+{
+  "name": "sace_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "crypt": "^0.0.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mysql": "^2.18.1",
+    "express-fileupload": "^1.1.7-alpha.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeliMackendy/sace_server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeliMackendy/sace_server/issues"
+  },
+  "homepage": "https://github.com/BeliMackendy/sace_server#readme"
+}
