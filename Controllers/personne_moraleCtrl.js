@@ -1,7 +1,7 @@
 const personne_moraleDb = require("../Models/personne_moraleDb");
 
 exports.Insert = async (req, res) => {
-  console.log(req.files);
+  console.log(req);
   // const {
   //   id_institution,
   //   denomination,

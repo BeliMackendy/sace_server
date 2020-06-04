@@ -1,7 +1,7 @@
 const entreprise_individuelleDb = require("../Models/entreprise_individuelleDb");
 
 exports.Insert = async (req, res) => {
-  console.log(req.files);
+  console.log(req);
   // console.log(req.files);
   //  if (!req.files) {
   //    res.send("File was not found");
