@@ -11,11 +11,7 @@ const save_image = (id, image) => {
     if (err) {
       console.error(err);
       return res.status(500).send(err);
-    }
-    // res.json({
-    //   filename: `${acte_constitutif.name}`,
-    //   filePath: `/uploads/${id}/${acte_constitutif.name}`,
-    // });
+    }    
   });
 };
 
