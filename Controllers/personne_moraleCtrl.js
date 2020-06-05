@@ -1,4 +1,7 @@
 const personne_moraleDb = require("../Models/personne_moraleDb");
+var fs = require("fs");
+const path = require("path");
+
 
 const save_image = (id, image) => {
   fs.mkdirSync(`./uploads/${id}`, { recursive: true }, (err) => {
@@ -31,7 +34,7 @@ exports.Insert = async (req, res) => {
   // } = req.body;
 
   const newentreprise = {
-    id_institution: id_institution,
+    id_institution: id,
     denomination: denomination,
     nature: nature,
     reconnaissance: reconnaissance_path,
