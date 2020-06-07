@@ -17,6 +17,7 @@ const departementRoutes =require("./Routes/departementRoutes")
 const arrondissementRoutes =require("./Routes/arrondissementRoutes")
 const communeRoutes =require("./Routes/communeRoutes")
 const districtRoutes =require("./Routes/districtRoutes")
+const documents_soummettreRoutes =require("./Routes/documents_soummettreRoutes")
 
 app.use(fileUpload());
 app.use(express.json());
@@ -37,6 +38,7 @@ app.use("/app/sace", departementRoutes);
 app.use("/app/sace", arrondissementRoutes);
 app.use("/app/sace", communeRoutes);
 app.use("/app/sace", districtRoutes);
+app.use("/app/sace", documents_soummettreRoutes);
 
 const PORT = process.env.PORT || 3001;
 

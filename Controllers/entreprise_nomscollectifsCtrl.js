@@ -41,17 +41,9 @@ exports.Insert = async (req, res) => {
     else {
       save_image(id, acte_constitutif);
       save_image(id, reconnaissance);
-      save_image(id, copie_p_identite);
-      const newentreprise_ = {
-        id_institution: id,
-        denomination: denomination,
-        nature: nature,
-        acte_constitutif: acte_constitutif_path,
-        reconnaissance: reconnaissance_path,
-        copie_p_identite: copie_p_identite_path,
-      };
+      save_image(id, copie_p_identite);      
 
-      res.json(newentreprise_);
+      res.json(newentreprise);
     }
   });
 };

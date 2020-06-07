@@ -25,14 +25,7 @@ exports.Insert = async (req, res) => {
   
   const reconnaissance_path = `/uploads/${id}/${reconnaissance.name}`;
   const quitus_patente_path = `/uploads/${id}/${quitus_patente.name}`;
-  // const {
-  //   id_institution,
-  //   denomination,
-  //   nature,
-  //   reconnaissance,
-  //   quitus_patente,
-  // } = req.body;
-
+  
   const newentreprise = {
     id_institution: id,
     denomination: denomination,
@@ -45,16 +38,9 @@ exports.Insert = async (req, res) => {
     if (err) console.log(err);
     else {      
       save_image(id, reconnaissance);
-      save_image(id, quitus_patente);
-      const newentreprise_ = {
-        id_institution: id,
-        denomination: denomination,
-        nature: nature,        
-        reconnaissance: reconnaissance_path,
-        copie_p_identite: quitus_patente,
-      };
+      save_image(id, quitus_patente);      
 
-      res.json(newentreprise_);
+      res.json(newentreprise);
     }
   });
 };
