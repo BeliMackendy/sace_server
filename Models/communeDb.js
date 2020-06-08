@@ -18,3 +18,14 @@ exports.select_commune_arrondissement = async(arrondissement,result) => {
     );
 };
 
+exports.select_commune_departement = async(departement,result) => {
+    await connect.query(
+        "SELECT * FROM commune where Code_Direction = ?",
+        departement.Code_Direction,
+        (err, res) => {
+            if (err) result(null, err);
+            else result(null, res);
+        }
+    );
+};
+
