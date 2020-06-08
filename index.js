@@ -19,6 +19,7 @@ const communeRoutes =require("./Routes/communeRoutes")
 const districtRoutes =require("./Routes/districtRoutes")
 const documents_soummettreRoutes =require("./Routes/documents_soummettreRoutes")
 const sec_comRoutes = require("./Routes/sec_comRoutes");
+const usersRoutes = require("./Routes/usersRoutes");
 
 app.use(fileUpload());
 app.use(express.json());
@@ -41,6 +42,7 @@ app.use("/app/sace", communeRoutes);
 app.use("/app/sace", districtRoutes);
 app.use("/app/sace", documents_soummettreRoutes);
 app.use("/app/sace", sec_comRoutes);
+app.use("/app/sace", usersRoutes);
 
 const PORT = process.env.PORT || 3001;
 
